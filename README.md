@@ -1,13 +1,13 @@
-# calcvol command-line tool
+# getbidsfile command-line tool
 
 ## Installation
-`python setup.py install`
+`pip install .`
 
 ## Help
 To see the command-line usage after installation, do:
 
-`python -m calcvol -h`
+`getbidsfile -h`
 
 or
 
-`calcvol -h`
+`python -m getbidsfile -h`
