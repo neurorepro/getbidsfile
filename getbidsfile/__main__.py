@@ -23,9 +23,9 @@ def main():
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawDescriptionHelpFormatter,
         description=textwrap.dedent('''\
-            Query single BIDS file for a given subject and BIDS dataset'''),
+            Get a single BIDS file for a given subject and BIDS dataset'''),
         epilog=textwrap.dedent('''\
-            Example: bidsget --bidsdir /my/bids --subject 0001 --suffix T1w'''))
+            Example: getbidsfile --bidsdir /my/bids --subject 0001 --suffix T1w'''))
     parser.add_argument("--bidsdir", required=True, help="path to the BIDS directory", type=type_isdir)
     parser.add_argument("--subject", required=True, help="name of subject (e.g. '0001')")
     parser.add_argument("--suffix", required=False, help="suffix present in filename (e.g. 'T1w')")
